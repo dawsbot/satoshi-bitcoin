@@ -1,4 +1,4 @@
-# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) 
+# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 satoshi-bitcoin is a node module for conversion between Satoshi and Bitcoin in either direction.
 
 ## Install
@@ -8,10 +8,13 @@ npm install satoshi-bitcoin
 
 ## Usage
 ```javascript
-var converter = require(satoshi-bitcoin);
+var converter = require('satoshi-bitcoin');
 console.log('One Bitcoin equals ' + converter.toSatoshi(1));
 console.log('One Satoshi equals ' + converter.toBitcoin(1));
 ```
+
+## Full API Reference
+Reference available [here](wiki/index.md)
 
 ## Tests
 ```bash
@@ -19,7 +22,11 @@ npm test
 ```
 
 ## Contributing
-If you see anything to add, I am very open to pull requests. If you would, please use [my eslint configuration](https://github.com/dawsonbotsford/dotfiles/blob/master/eslintrc).
+I am very open to pull requests. 
+* Please lint. Consider using [my eslint configuration](https://github.com/dawsonbotsford/dotfiles/blob/master/eslintrc). 
+* After a change, please increment the version in ```package.json``` as defined per [Semantic Versioning](http://semver.org/).
+* Update the [wiki](wiki/index.md) by performing ```npm install -g jsdox && jsdox index.js --output wiki```
+
 
 ## License
 MIT

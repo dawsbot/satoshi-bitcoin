@@ -1,0 +1,27 @@
+{
+  "name": "satoshi-bitcoin",
+  "version": "1.0.0",
+  "description": "Convert between Satoshi and Bitcoin",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawsonbotsford/satoshi-bitcoin.git"
+  },
+  "keywords": [
+    "Bitcoin",
+    "Satoshi"
+  ],
+  "author": "Dawson Botsford <dawsonbotsford@gmail.com> (dawsonbotsford.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dawsonbotsford/satoshi-bitcoin/issues"
+  },
+  "homepage": "https://github.com/dawsonbotsford/satoshi-bitcoin#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  }
+}

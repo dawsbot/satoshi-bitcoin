@@ -14,7 +14,7 @@ console.log('One Satoshi equals ' + converter.toBitcoin(1));
 ```
 
 ## Full API Reference
-Reference available [here](wiki/index.md)
+Fully generated jsdoc documentation on [the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
 
 ## Tests
 ```bash
@@ -22,14 +22,15 @@ npm test
 ```
 
 ## Contributing
-I am very open to pull requests. 
-* Please lint. Consider using [my eslint configuration](https://github.com/dawsonbotsford/dotfiles/blob/master/eslintrc). 
+I am very open to pull requests.
+* Please lint. Consider using [my eslint configuration](https://github.com/dawsonbotsford/dotfiles/blob/master/eslintrc).
 * After a change, please increment the version in ```package.json``` as defined per [Semantic Versioning](http://semver.org/).
-* Update the [wiki](wiki/index.md) by performing ```npm install -g jsdox && jsdox index.js --output wiki```
+* Update the [Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md) by performing ```npm install -g jsdox && jsdox index.js --output wiki```
 
 
 ## License
 MIT
 
 ## Release History
+* 0.1.1 README updates to reference wiki
 * 0.1.0 Initial release

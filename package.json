@@ -15,12 +15,7 @@
     "Satoshi"
   ],
   "author": "Dawson Botsford <dawsonbotsford@gmail.com> (dawsonbotsford.com)",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dawsonbotsford/satoshi-bitcoin/issues"
   },

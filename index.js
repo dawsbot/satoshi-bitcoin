@@ -1,6 +1,12 @@
 /**
  * @module satoshi-bitcoin
  */
+
+var Big = require('big.js');
+
+// @private
+var conversion = 100000000;
+
 module.exports = {
 
   /**
@@ -9,7 +15,8 @@ module.exports = {
    * @returns {number}
    */
   toBitcoin: function(satoshi) {
-    return satoshi / 100000000;
+    var bigSatoshi = new Big(satoshi);
+    return Number(bigSatoshi.div(conversion));
   },
 
   /**
@@ -18,7 +25,8 @@ module.exports = {
    * @returns {number}
    */
   toSatoshi: function(bitcoin) {
-    return bitcoin * 100000000;
+    var bigBitcoin = new Big(bitcoin);
+    return Number(bigBitcoin.times(conversion));
   }
 
 };

@@ -1,18 +1,33 @@
 {
   "name": "satoshi-bitcoin",
-  "version": "0.1.1",
-  "description": "Convert between Satoshi and Bitcoin",
+  "version": "0.1.2",
+  "description": "Convert between Satoshi and Bitcoin with precision",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha && eslint index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dawsonbotsford/satoshi-bitcoin.git"
   },
   "keywords": [
-    "Bitcoin",
-    "Satoshi"
+    "bitcoin",
+    "satoshi",
+    "conversion",
+    "cryptocurrency",
+    "math",
+    "arbitrary",
+    "precision",
+    "arithmetic",
+    "big",
+    "integer",
+    "int",
+    "number",
+    "biginteger",
+    "bigint",
+    "bignumber",
+    "decimal",
+    "float"
   ],
   "author": "Dawson Botsford <dawsonbotsford@gmail.com> (dawsonbotsford.com)",
   "license": "MIT",
@@ -23,5 +38,8 @@
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "big.js": "^3.1.3"
   }
 }

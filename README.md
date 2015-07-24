@@ -1,4 +1,4 @@
-# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin) ![Donate Bitcoin](https://img.shields.io/badge/Donate%20BTC%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)
+# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 Convert between Satoshi and Bitcoin in either direction with precision.
 
 ## Install
@@ -25,7 +25,6 @@ npm test
 I am very open to pull requests.
 * Update [the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md) by performing ```npm install -g jsdox && jsdox index.js --output wiki```
 
-
 ## License
 MIT
 
@@ -33,3 +32,5 @@ MIT
 * 0.1.2 Handle floating point corner cases and added lint tests
 * 0.1.1 README updates to reference wiki
 * 0.1.0 Initial release
+
+ ![Donate Bitcoin](https://img.shields.io/badge/Donate%20BTC%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)

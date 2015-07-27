@@ -1,6 +1,9 @@
 # satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 Convert between Satoshi and Bitcoin in either direction with precision.
 
+##Example
+[Imgur](http://i.imgur.com/xh6W5mW.gifv)
+
 ## Install
 ```bash
 npm install satoshi-bitcoin

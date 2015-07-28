@@ -1,14 +1,11 @@
 var should = require('chai').should();
-var btcConverter = require('../index');
-var toBitcoin = btcConverter.toBitcoin;
-var toSatoshi = btcConverter.toSatoshi;
+var converter = require('../index');
+var toBitcoin = converter.toBitcoin;
+var toSatoshi = converter.toSatoshi;
 
 describe('#toBitcoin', function() {
-  it('converts a moderate amount', function() {
+  it('converts simple integer amounts', function() {
     toBitcoin(100000000).should.equal(1);
-  });
-
-  it('converts a large amount', function() {
     toBitcoin(123456789012345).should.equal(1234567.89012345);
   });
 
@@ -17,16 +14,18 @@ describe('#toBitcoin', function() {
   });
 
   it('converts and handles corner case rounding', function() {
-    toBitcoin(4.6).should.equal(.000000046);
+    toBitcoin(46).should.equal(.00000046);
+  });
+
+  it('handles TypeError input', function() {
+    toBitcoin.bind(this, true).should.throw('toBitcoin must be called on a number');
+    toBitcoin.bind(this, 1.1).should.throw('toBitcoin must be called on a whole number');
   });
 });
 
 describe('#toSatoshi', function() {
-  it('converts a moderate amount', function() {
+  it('converts simple integer amounts', function() {
     toSatoshi(0.00000001).should.equal(1);
-  });
-
-  it('converts a large amount', function() {
     toSatoshi(98765).should.equal(9876500000000);
   });
 
@@ -36,5 +35,9 @@ describe('#toSatoshi', function() {
 
   it('converts and handles corner case rounding', function() {
     toSatoshi(4.6).should.equal(460000000);
+  });
+
+  it('handles TypeError input', function() {
+    toSatoshi.bind(this, true).should.throw('toSatoshi must be called on a number');
   });
 });

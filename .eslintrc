@@ -9,7 +9,8 @@
     "strict": 0,
     "no-multi-spaces": 1,
     "semi-spacing": 1,
-    "no-shadow": 0
+    "no-shadow": 1,
+    "no-trailing-spaces": 1
   },
 
   "env": {

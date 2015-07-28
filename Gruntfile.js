@@ -4,18 +4,20 @@ module.exports = function(grunt) {
     eslint: {
       target: ['index.js']
     },
-    simplemocha: {
-      src: ['test/*.spec.js'],
-      options: {
-        run: true
+    mochaTest: {
+      test: {
+        src: ['test/*.spec.js'],
+        options: {
+          reporter: 'spec'
+        }
       }
     }
   });
 
   grunt.loadNpmTasks('grunt-eslint');
-  grunt.loadNpmTasks('grunt-simple-mocha');
+  grunt.loadNpmTasks('grunt-mocha-test');
 
   grunt.registerTask('default', ['lint', 'test']);
   grunt.registerTask('lint', ['eslint']);
-  grunt.registerTask('test', ['simplemocha']);
+  grunt.registerTask('test', ['mochaTest']);
 };

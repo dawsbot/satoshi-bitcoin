@@ -1,7 +1,7 @@
-# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
+# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin) [![Code Climate](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin/badges/gpa.svg)](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin)
 npm module to convert between Satoshi and Bitcoin in either direction <b>with lightweight precision</b>.
 
-![Imgur](http://i.imgur.com/xh6W5mW.gif)
+![Imgur](http://i.imgur.com/NVtoghP.gif)
 
 ## Install
 ```bash
@@ -15,12 +15,13 @@ console.log('One Bitcoin equals ' + converter.toSatoshi(1));
 console.log('One Satoshi equals ' + converter.toBitcoin(1));
 ```
 
-### Advanced
+### Advanced Usage
 ```javascript
 var converter = require('satoshi-bitcoin');
-//Handles TypeErrors by throwing exception
+//Try catch only needed if input may not be valid numbers
 try {
-	console.log('One Bitcoin equals ' + converter.toSatoshi(false));
+  console.log('One Bitcoin equals ' + converter.toSatoshi(1));
+  console.log('false Bitcoin equals ' + converter.toSatoshi(false)); //Throw TypeError
 } catch (err) {
 	console.log(err);
 }

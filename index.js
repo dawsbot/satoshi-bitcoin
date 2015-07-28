@@ -15,6 +15,11 @@ module.exports = {
    * @returns {number}
    */
   toBitcoin: function(satoshi) {
+    if (typeof satoshi !== 'number'){
+      throw new TypeError('toBitcoin must be called on a number');
+    }
+
+    //if not an int, return decimal required message
     var bigSatoshi = new Big(satoshi);
     return Number(bigSatoshi.div(conversion));
   },
@@ -25,6 +30,11 @@ module.exports = {
    * @returns {number}
    */
   toSatoshi: function(bitcoin) {
+    if (typeof bitcoin !== 'number'){
+      throw new TypeError('toSatoshi must be called on a number');
+    }
+
+    //if not a number, throw invalid type
     var bigBitcoin = new Big(bitcoin);
     return Number(bigBitcoin.times(conversion));
   }

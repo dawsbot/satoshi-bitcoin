@@ -1,14 +1,11 @@
 var should = require('chai').should();
-var btcConverter = require('../index');
-var toBitcoin = btcConverter.toBitcoin;
-var toSatoshi = btcConverter.toSatoshi;
+var converter = require('../index');
+var toBitcoin = converter.toBitcoin;
+var toSatoshi = converter.toSatoshi;
 
 describe('#toBitcoin', function() {
-  it('converts a moderate amount', function() {
+  it('converts simple integer amounts', function() {
     toBitcoin(100000000).should.equal(1);
-  });
-
-  it('converts a large amount', function() {
     toBitcoin(123456789012345).should.equal(1234567.89012345);
   });
 
@@ -19,14 +16,15 @@ describe('#toBitcoin', function() {
   it('converts and handles corner case rounding', function() {
     toBitcoin(4.6).should.equal(.000000046);
   });
+
+  it('handles TypeError input', function() {
+    toBitcoin(1).should.throw();
+  });
 });
 
 describe('#toSatoshi', function() {
-  it('converts a moderate amount', function() {
+  it('converts simple integer amounts', function() {
     toSatoshi(0.00000001).should.equal(1);
-  });
-
-  it('converts a large amount', function() {
     toSatoshi(98765).should.equal(9876500000000);
   });
 

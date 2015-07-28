@@ -38,15 +38,15 @@ grunt
 	* Satoshi is currently the smallest possible sub-unit of Bitcoin. There are 100,000,000 Satoshi in one Bitcoin.
 * Why do I need a module when I can just divide or multiply by 100,000,000 myself?
 	* In the world of finance, floating point and unhandled type errors can cause catastrophic issues. ```satoshi-bitcoin``` handles that by implementing a bignum library in the background and descriptive error handling.
-	
+
 ## Contributing
-I am very open to pull requests.
+Very open to pull requests.
 
 * After any change to ```index.js```, update [the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md) by performing ```npm install -g jsdox && jsdox index.js --output wiki```
 * Licensed under MIT
 
 ## Release History
-* 0.1.3 Implement error handling. Switched to grunt. 
+* 0.2.0 Error handling Implemented. Switched to grunt.
 * 0.1.2 Handle floating point corner cases and added lint tests
 * 0.1.1 README updates to reference wiki
 * 0.1.0 Initial release

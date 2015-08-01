@@ -12,7 +12,7 @@ Convert Satoshi to Bitcoin
 
 **Parameters**
 
-**satoshi**: `number`, Amount of Satoshi to convert. Must be a whole number
+**satoshi**: `number | string`, Amount of Satoshi to convert. Must be a whole number
 
 **Returns**: `number`
 
@@ -23,7 +23,7 @@ Convert Bitcoin to Satoshi
 
 **Parameters**
 
-**bitcoin**: `number`, Amount of Bitcoin to convert
+**bitcoin**: `number | string`, Amount of Bitcoin to convert
 
 **Returns**: `number`
 

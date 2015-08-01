@@ -8,6 +8,10 @@ describe('#toBitcoin', function() {
     toBitcoin(100000000).should.equal(1);
     toBitcoin(123456789012345).should.equal(1234567.89012345);
   });
+  it('converts simple string amounts', function() {
+    toBitcoin('100000000').should.equal(1);
+    toBitcoin('123456789012345').should.equal(1234567.89012345);
+  });
 
   it('converts to Bitcoin, not to Satoshi', function() {
     toBitcoin(98765).should.not.equal(9876500000000);
@@ -18,8 +22,8 @@ describe('#toBitcoin', function() {
   });
 
   it('handles TypeError input', function() {
-    toBitcoin.bind(this, true).should.throw('toBitcoin must be called on a number');
-    toBitcoin.bind(this, 1.1).should.throw('toBitcoin must be called on a whole number');
+    toBitcoin.bind(this, true).should.throw('toBitcoin must be called on a number or string');
+    toBitcoin.bind(this, 1.1).should.throw('toBitcoin must be called on a whole number or string format whole number');
   });
 });
 
@@ -27,6 +31,10 @@ describe('#toSatoshi', function() {
   it('converts simple integer amounts', function() {
     toSatoshi(0.00000001).should.equal(1);
     toSatoshi(98765).should.equal(9876500000000);
+  });
+  it('converts simple string amounts', function() {
+    toSatoshi('0.00000001').should.equal(1);
+    toSatoshi('98765').should.equal(9876500000000);
   });
 
   it('converts to Satoshi, not to Bitcoin', function() {
@@ -38,6 +46,6 @@ describe('#toSatoshi', function() {
   });
 
   it('handles TypeError input', function() {
-    toSatoshi.bind(this, true).should.throw('toSatoshi must be called on a number');
+    toSatoshi.bind(this, true).should.throw('toSatoshi must be called on a number or string');
   });
 });

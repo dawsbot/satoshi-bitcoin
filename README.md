@@ -13,7 +13,7 @@ npm module to convert between Satoshi and Bitcoin in either direction <b>with li
 
 ## Install
 ```bash
-npm install satoshi-bitcoin
+npm install --save satoshi-bitcoin
 ```
 <br>
 
@@ -21,15 +21,15 @@ npm install satoshi-bitcoin
 Node.js
 ```js
 var sb = require('satoshi-bitcoin');
-console.log('One Bitcoin equals ' + sb.toSatoshi(1));
-console.log('One Satoshi equals ' + sb.toBitcoin(1));
+console.log('One Bitcoin is ' + sb.toSatoshi(1) + ' Satoshi');
+console.log('One Satoshi equals ' + sb.toBitcoin(1) + ' Bitcoin');
 ```
 
 Web
 ```js
 <script src="https://rawgit.com/dawsonbotsford/satoshi-bitcoin/master/index.bundle.js"></script>
 <script>
-  console.log('One Satoshi equals ' + sb.toBitcoin(1));
+  console.log('One Satoshi equals ' + sb.toBitcoin(1) + ' Bitcoin');
 </script>
 
 

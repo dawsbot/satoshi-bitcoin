@@ -68,6 +68,7 @@ grunt
 <br>
 
 ## Release History
+* 0.3.2 compress total package size in half and minify
 * 0.3.0 Support string input. Update README
 * 0.2.0 Error handling Implemented. Switched to grunt.
 * 0.1.2 Handle floating point corner cases and added lint tests

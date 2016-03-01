@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt",
-    "uglify": "uglifyjs index.js --compress --mangle -o index.min.js"
+    "browserify": "browserify index.js -o index.bundle.js --standalone satoshi-bitcoin"
   },
   "repository": {
     "type": "git",
@@ -50,6 +50,6 @@
     "big.js": "^3.1.3"
   },
   "files": [
-    "index.min.js"
+    "index.js"
   ]
 }

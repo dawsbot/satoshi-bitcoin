@@ -1,6 +1,8 @@
-# satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin) [![Code Climate](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin/badges/gpa.svg)](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin)
+# satoshi-bitcoin
+[![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin)
+[![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 
-> npm module to convert between Satoshi and Bitcoin in either direction <b>with lightweight precision</b>.
+> npm module to convert between Satoshi and Bitcoin <b>with lightweight precision</b>.
 
 ## The Problem
 ![The problem](http://i.imgur.com/H1Ck3bF.png)
@@ -49,23 +51,29 @@ try {
 
 <br>
 
-## Full API Reference
-Fully generated jsdoc documentation on [the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
+## API
+`toSatoshi(number)`  
+`toBitcoin(number)`
+
+[Read more on the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
 
 <br>
 
 ## FAQ
 * What is a Satoshi?
-	* Satoshi is currently the smallest possible sub-unit of Bitcoin. There are 100,000,000 Satoshi in one Bitcoin.
+	* Satoshi is the smallest sub-unit of Bitcoin. There are 100,000,000 Satoshi in one Bitcoin.  
+
+
 * Why do I need a module when I can just divide or multiply by 100,000,000 myself?
-	* [See here](http://repl.it/zlF/4) - Explanation: In the world of finance, floating point and unhandled type errors can cause catastrophic issues. ```satoshi-bitcoin``` handles that by implementing a bignum library in the background and descriptive error handling.
+	* [See here](http://repl.it/zlF/4) - Explanation: ```satoshi-bitcoin``` handles floating point arithmetic errors by implementing a bignum library and descriptive error handling.
 
 <br>
 
 ## Contributing
 Open to pull requests.
 
-* After any change to ```index.js```, update [the Wiki](https://github.com/dawsonbotsford/satoshi-Bitcoin/blob/master/wiki/index.md) by performing ```npm run wiki```
+* After any change to ```index.js```, update [the Wiki](wiki/index.md) by performing ```npm run wiki```
+* After any change to ```index.js```, update [the browser bundle](index.bundle.js) by performing ```npm run wiki```
 * Licensed under MIT
 
 <br>
@@ -78,6 +86,7 @@ npm test
 <br>
 
 ## Release History
+* 0.3.5 Improve documentation
 * 0.3.4 Add browserified pack for web usage
 * 0.3.2 Compress total package size in half and minify
 * 0.3.0 Support string input. Update README
@@ -86,4 +95,4 @@ npm test
 * 0.1.1 README updates to reference wiki
 * 0.1.0 Initial release
 
-![Donate Bitcoin](https://img.shields.io/badge/Donate%20BTC%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)
+![Donate Bitcoin](https://img.shields.io/badge/Donate%20Bitcoin%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)

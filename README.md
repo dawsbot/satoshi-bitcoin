@@ -1,5 +1,5 @@
 # satoshi-bitcoin [![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin) [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin) [![Code Climate](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin/badges/gpa.svg)](https://codeclimate.com/github/dawsonbotsford/satoshi-bitcoin)
-npm module to convert between Satoshi and Bitcoin in either direction <b>with lightweight precision</b>.
+npm module to convert Satoshi <-> Bitcoin <b>with lightweight precision</b>.
 
 ## The Problem
 ![The problem](http://i.imgur.com/H1Ck3bF.png)

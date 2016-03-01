@@ -18,22 +18,31 @@ npm install satoshi-bitcoin
 <br>
 
 ## Usage
-```javascript
-var converter = require('satoshi-bitcoin');
-console.log('One Bitcoin equals ' + converter.toSatoshi(1));
-console.log('One Satoshi equals ' + converter.toBitcoin(1));
+Node.js
+```js
+var sb = require('satoshi-bitcoin');
+console.log('One Bitcoin equals ' + sb.toSatoshi(1));
+console.log('One Satoshi equals ' + sb.toBitcoin(1));
 ```
+
+web
+```js
+<script src="https://rawgit.com/dawsonbotsford/satoshi-bitcoin/master/index.bundle.js"></script>
+<script>
+  console.log('One Satoshi equals ' + sb.toBitcoin(1));
+</script>
+
+
+```
+
 <br>
 
-### Advanced Usage
+### Error Handling
 ```javascript
-var converter = require('satoshi-bitcoin');
-//Try catch only needed if input may not be valid numbers
 try {
-  console.log('One Bitcoin equals ' + converter.toSatoshi(1));
-  console.log('false Bitcoin equals ' + converter.toSatoshi(false)); //Throw TypeError
+  sb.toSatoshi(false)); //Throws TypeError
 } catch (err) {
-	console.log(err);
+  console.log(err);
 }
 ```
 

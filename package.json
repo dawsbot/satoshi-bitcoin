@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "grunt",
-    "browserify": "browserify index.js -o index.bundle.js --standalone satoshi-bitcoin"
+    "browserify": "browserify index.js -o index.bundle.js --standalone sb"
   },
   "repository": {
     "type": "git",

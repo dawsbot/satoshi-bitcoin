@@ -5,15 +5,18 @@ npm module to convert between Satoshi and Bitcoin in either direction <b>with li
 ![The problem](http://i.imgur.com/H1Ck3bF.png)
 
 <br>
+
 ## The Solution
 ![The solution](http://i.imgur.com/NVtoghP.gif)
 
 <br>
+
 ## Install
 ```bash
 npm install satoshi-bitcoin
 ```
 <br>
+
 ## Usage
 ```javascript
 var converter = require('satoshi-bitcoin');
@@ -21,6 +24,7 @@ console.log('One Bitcoin equals ' + converter.toSatoshi(1));
 console.log('One Satoshi equals ' + converter.toBitcoin(1));
 ```
 <br>
+
 ### Advanced Usage
 ```javascript
 var converter = require('satoshi-bitcoin');
@@ -32,11 +36,14 @@ try {
 	console.log(err);
 }
 ```
+
 <br>
+
 ## Full API Reference
 Fully generated jsdoc documentation on [the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
 
 <br>
+
 ## FAQ
 * What is a Satoshi?
 	* Satoshi is currently the smallest possible sub-unit of Bitcoin. There are 100,000,000 Satoshi in one Bitcoin.
@@ -44,6 +51,7 @@ Fully generated jsdoc documentation on [the Wiki](https://github.com/dawsonbotsf
 	* [See here](http://repl.it/zlF/4) - Explanation: In the world of finance, floating point and unhandled type errors can cause catastrophic issues. ```satoshi-bitcoin``` handles that by implementing a bignum library in the background and descriptive error handling.
 
 <br>
+
 ## Contributing
 Open to pull requests.
 
@@ -51,12 +59,14 @@ Open to pull requests.
 * Licensed under MIT
 
 <br>
+
 ## Tests
 ```bash
 grunt
 ```
 
 <br>
+
 ## Release History
 * 0.3.0 Support string input. Update README
 * 0.2.0 Error handling Implemented. Switched to grunt.

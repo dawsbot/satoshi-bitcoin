@@ -1,6 +1,6 @@
 {
   "name": "satoshi-bitcoin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Convert between Satoshi and Bitcoin with precision",
   "main": "index.js",
   "scripts": {

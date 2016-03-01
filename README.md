@@ -25,7 +25,7 @@ console.log('One Bitcoin equals ' + sb.toSatoshi(1));
 console.log('One Satoshi equals ' + sb.toBitcoin(1));
 ```
 
-web
+Web
 ```js
 <script src="https://rawgit.com/dawsonbotsford/satoshi-bitcoin/master/index.bundle.js"></script>
 <script>
@@ -64,14 +64,14 @@ Fully generated jsdoc documentation on [the Wiki](https://github.com/dawsonbotsf
 ## Contributing
 Open to pull requests.
 
-* After any change to ```index.js```, update [the Wiki](https://github.com/dawsonbotsford/satoshi-Bitcoin/blob/master/wiki/index.md) by performing ```jsdox index.js --output wiki```
+* After any change to ```index.js```, update [the Wiki](https://github.com/dawsonbotsford/satoshi-Bitcoin/blob/master/wiki/index.md) by performing ```npm run wiki```
 * Licensed under MIT
 
 <br>
 
 ## Tests
 ```bash
-grunt
+npm test
 ```
 
 <br>

@@ -4,7 +4,7 @@
   "description": "Convert Satoshi <-> Bitcoin",
   "main": "index.js",
   "scripts": {
-    "test": "grunt",
+    "test": "eslint index.js && mocha",
     "browserify": "browserify index.js -o index.bundle.js --standalone sb",
     "wiki": "jsdox index.js --output wiki"
   },
@@ -38,14 +38,8 @@
   },
   "homepage": "https://github.com/dawsonbotsford/satoshi-bitcoin#readme",
   "devDependencies": {
-    "chai": "^3.2.0",
-    "eslint": "^2.0.0",
-    "grunt": "^0.4.5",
-    "grunt-eslint": "^18.0.0",
-    "grunt-mocha-test": "^0.12.7",
-    "grunt-simple-mocha": "^0.4.0",
-    "jsdox": "^0.4.9",
-    "mocha": "^2.2.5"
+    "eslint": "^2.2.0",
+    "jsdox": "^0.4.9"
   },
   "dependencies": {
     "big.js": "^3.1.3"

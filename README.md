@@ -24,6 +24,7 @@ npm install --save satoshi-bitcoin
 Node.js
 ```js
 var sb = require('satoshi-bitcoin');
+
 console.log('One Bitcoin is ' + sb.toSatoshi(1) + ' Satoshi');
 console.log('One Satoshi equals ' + sb.toBitcoin(1) + ' Bitcoin');
 ```

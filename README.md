@@ -9,11 +9,6 @@
 
 <br>
 
-## The Solution
-![The solution](http://i.imgur.com/NVtoghP.gif)
-
-<br>
-
 ## Install
 ```bash
 npm install --save satoshi-bitcoin
@@ -25,9 +20,14 @@ Node.js
 ```js
 var sb = require('satoshi-bitcoin');
 
-console.log('One Bitcoin is ' + sb.toSatoshi(1) + ' Satoshi');
-console.log('One Satoshi equals ' + sb.toBitcoin(1) + ' Bitcoin');
+sb.toSatoshi(1);
+//=>100000000
+
+sb.toBitcoin(100000000);
+//=>1
 ```
+
+<br>
 
 Web
 ```js
@@ -53,8 +53,8 @@ try {
 <br>
 
 ## API
-`toSatoshi(number)`  
-`toBitcoin(number)`
+`toSatoshi(number || string)`  
+`toBitcoin(number || string)`
 
 [Read more on the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
 
@@ -62,20 +62,11 @@ try {
 
 ## FAQ
 * What is a Satoshi?
-	* Satoshi is the smallest sub-unit of Bitcoin. There are 100,000,000 Satoshi in one Bitcoin.  
+	* Satoshi is to Bitcoin as pennies are to the dollar. Except that there are 100,000,000 Satoshi in one Bitcoin.  
 
 
-* Why do I need a module when I can just divide or multiply by 100,000,000 myself?
-	* [See here](http://repl.it/zlF/4) - Explanation: ```satoshi-bitcoin``` handles floating point arithmetic errors by implementing a bignum library and descriptive error handling.
-
-<br>
-
-## Contributing
-Open to pull requests.
-
-* After any change to ```index.js```, update [the Wiki](wiki/index.md) by performing ```npm run wiki```
-* After any change to ```index.js```, update [the browser bundle](index.bundle.js) by performing ```npm run wiki```
-* Licensed under MIT
+* Why do I need a module when I can just divide or multiply by 100,000,000?
+	* [See here](http://repl.it/zlF/4) - Floating point errors are a bitch. So `satoshi-bitcoin` uses a bignum library to ensure accurate conversions!
 
 <br>
 
@@ -86,14 +77,12 @@ npm test
 
 <br>
 
-## Release History
-* 0.3.5 Improve documentation
-* 0.3.4 Add browserified pack for web usage
-* 0.3.2 Compress total package size in half and minify
-* 0.3.0 Support string input. Update README
-* 0.2.0 Error handling Implemented. Switched to grunt.
-* 0.1.2 Handle floating point corner cases and added lint tests
-* 0.1.1 README updates to reference wiki
-* 0.1.0 Initial release
+## Contributing
+Thanks for the contribution!
+
+* After any change to ```index.js```, update [the Wiki](wiki/index.md) by performing ```npm run wiki```
+* After any change to ```index.js```, update [the browser bundle](index.bundle.js) by performing ```npm run browserify```
+
+<br>
 
 ![Donate Bitcoin](https://img.shields.io/badge/Donate%20Bitcoin%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)

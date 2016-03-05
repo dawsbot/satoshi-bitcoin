@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/dawsonbotsford/satoshi-bitcoin#readme",
   "devDependencies": {
-    "eslint": "^2.2.0",
+    "eslint": "^2.3.0",
     "jsdox": "^0.4.9"
   },
   "dependencies": {

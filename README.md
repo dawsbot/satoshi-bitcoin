@@ -91,6 +91,8 @@ try {
 npm test
 ```
 
+<br>
+
 ## License
 
 MIT © [Dawson Botsford](http://dawsonbotsford.com)

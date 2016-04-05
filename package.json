@@ -40,7 +40,7 @@
   "homepage": "https://github.com/dawsonbotsford/satoshi-bitcoin#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "eslint": "2.5.2",
+    "eslint": "2.7.0",
     "husky": "^0.11.4",
     "jsdox": "^0.4.9",
     "mocha": "^2.4.5",

@@ -27,11 +27,14 @@ module.exports = {
    * @returns {number}
    */
   toBitcoin: function(satoshi) {
-    if (typeof satoshi === 'string') {
+    //validate arg
+    var satoshiType = typeof satoshi;
+    if (satoshiType === 'string') {
       satoshi = toNumber(satoshi);
+      satoshiType = 'number';
     }
-    if (typeof satoshi !== 'number'){
-      throw new TypeError('toBitcoin must be called on a number or string');
+    if (satoshiType !== 'number'){
+      throw new TypeError('toBitcoin must be called on a number or string, got ' + satoshiType);
     }
     if (isNotInt(satoshi)) {
       throw new TypeError('toBitcoin must be called on a whole number or string format whole number');
@@ -48,14 +51,16 @@ module.exports = {
    * @returns {number}
    */
   toSatoshi: function(bitcoin) {
-    if (typeof bitcoin === 'string') {
+    //validate arg
+    var bitcoinType = typeof bitcoin;
+    if (bitcoinType === 'string') {
       bitcoin = toNumber(bitcoin);
+      bitcoinType = 'number';
     }
-    if (typeof bitcoin !== 'number'){
-      throw new TypeError('toSatoshi must be called on a number or string');
+    if (bitcoinType !== 'number'){
+      throw new TypeError('toSatoshi must be called on a number or string, got ' + bitcoinType);
     }
 
-    //if not a number, throw invalid type
     var bigBitcoin = new Big(bitcoin);
     return Number(bigBitcoin.times(conversion));
   }

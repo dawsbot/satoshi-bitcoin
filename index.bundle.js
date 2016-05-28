@@ -8,9 +8,11 @@ var Big = require('big.js');
 // @private
 var conversion = 100000000;
 
-// @private
-function isNotInt(n) {
-     return n % 1 !== 0;
+// es6 polyfill
+if (!Number.isInteger) {
+  Number.isInteger = function(num) {
+    return typeof num === 'number' && num % 1 === 0;
+  }
 }
 
 // @private
@@ -37,7 +39,7 @@ module.exports = {
     if (satoshiType !== 'number'){
       throw new TypeError('toBitcoin must be called on a number or string, got ' + satoshiType);
     }
-    if (isNotInt(satoshi)) {
+    if (!Number.isInteger(satoshi)) {
       throw new TypeError('toBitcoin must be called on a whole number or string format whole number');
     }
 

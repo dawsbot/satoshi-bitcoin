@@ -1,6 +1,6 @@
 # satoshi-bitcoin
 
-[![Build Status](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsonbotsford/satoshi-bitcoin)
+[![Build Status](https://travis-ci.org/dawsbot/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsbot/satoshi-bitcoin)
 [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 
 > npm module to convert between Satoshi and Bitcoin <b>with lightweight precision</b>.
@@ -95,6 +95,4 @@ npm test
 
 ## License
 
-MIT © [Dawson Botsford](http://dawsonbotsford.com)
-
-![Donate Bitcoin](https://img.shields.io/badge/Donate%20Bitcoin%20-16VpU9eZgQv8YfZ8WJo5XX2Qwybny9WAqf-ff69b4.svg)
+MIT © [Dawson Botsford](https://dawsbot.com)

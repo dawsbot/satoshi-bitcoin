@@ -5,6 +5,7 @@ describe('#toBitcoin', function() {
   it('converts simple integer amounts', function() {
     sb.toBitcoin(100000000).should.equal(1);
     sb.toBitcoin(123456789012345).should.equal(1234567.89012345);
+    sb.toBitcoin(1).should.equal(0.00000001);
   });
   it('converts simple string amounts', function() {
     sb.toBitcoin('100000000').should.equal(1);

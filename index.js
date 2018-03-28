@@ -43,7 +43,7 @@ module.exports = {
     }
 
     var bigSatoshi = new Big(satoshi);
-    return Number(bigSatoshi.div(conversion));
+    return Number(bigSatoshi.div(conversion).toFixed(8));
   },
 
   /**

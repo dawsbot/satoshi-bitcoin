@@ -6,8 +6,7 @@
   "scripts": {
     "test": "eslint index.js && mocha",
     "bundle": "browserify index.js -o index.bundle.js --standalone sb",
-    "wiki": "jsdox index.js --output wiki",
-    "precommit": "npm run wiki && npm run bundle"
+    "precommit": "npm run bundle"
   },
   "repository": {
     "type": "git",
@@ -32,17 +31,16 @@
     "decimal",
     "float"
   ],
-  "author": "Dawson Botsford <dawsonbotsford@gmail.com> (dawsonbotsford.com)",
+  "author": "dawsbot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dawsonbotsford/satoshi-bitcoin/issues"
+    "url": "https://github.com/dawsbot/satoshi-bitcoin/issues"
   },
-  "homepage": "https://github.com/dawsonbotsford/satoshi-bitcoin#readme",
   "devDependencies": {
+    "browserify": "^16.2.3",
     "chai": "^3.5.0",
     "eslint": "2.13.1",
     "husky": "^0.11.4",
-    "jsdox": "^0.4.9",
     "mocha": "^2.4.5"
   },
   "dependencies": {

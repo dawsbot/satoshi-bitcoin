@@ -18,11 +18,13 @@
 ```bash
 npm install --save satoshi-bitcoin
 ```
+
 <br>
 
 ## Usage
 
 #### Node.js
+
 ```js
 var sb = require('satoshi-bitcoin');
 
@@ -38,7 +40,7 @@ sb.toBitcoin(100000000);
 #### Web
 
 ```js
-<script src="https://rawgit.com/dawsonbotsford/satoshi-bitcoin/master/index.bundle.js"></script>
+<script src="https://unpkg.com/satoshi-bitcoin/index.bundle.js"></script>
 <script>
   console.log('One Satoshi equals ' + sb.toBitcoin(1) + ' Bitcoin');
 </script>
@@ -47,6 +49,7 @@ sb.toBitcoin(100000000);
 <br>
 
 Or download it with `npm install --save satoshi-bitcoin` and reference it as:
+
 ```html
 <script src="node_modules/satoshi-bitcoin/index.bundle.js"></script>
 ```
@@ -76,12 +79,9 @@ try {
 
 ## FAQ
 
-* What is a Satoshi?
-	* Satoshi is to Bitcoin as pennies are to the dollar. Except that there are 100,000,000 Satoshi in one Bitcoin.  
+- What is a Satoshi? \* Satoshi is to Bitcoin as pennies are to the dollar. Except that there are 100,000,000 Satoshi in one Bitcoin.
 
-
-* Why do I need a module when I can just divide or multiply by 100,000,000?
-	* [See here](http://repl.it/zlF/4) - Floating point errors are a bitch. So `satoshi-bitcoin` uses a bignum library to ensure accurate conversions!
+* Why do I need a module when I can just divide or multiply by 100,000,000? \* [See here](http://repl.it/zlF/4) - Floating point errors are a bitch. So `satoshi-bitcoin` uses a bignum library to ensure accurate conversions!
 
 <br>
 

@@ -87,5 +87,5 @@ module.exports = {
     var bigSatoshi = new Big(satoshi);
 
     return Number(bigSatoshi.div(conversion[to]));
-  },
+  }
 };

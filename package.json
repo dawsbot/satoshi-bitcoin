@@ -3,6 +3,9 @@
   "version": "1.0.5",
   "description": "Convert Satoshi <-> Bitcoin",
   "main": "index.js",
+  "engines": {
+    "node": ">0.10"
+  },
   "scripts": {
     "test": "eslint index.js && mocha",
     "bundle": "browserify index.js -o index.bundle.js --standalone sb",

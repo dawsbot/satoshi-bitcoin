@@ -1,7 +1,7 @@
 # satoshi-bitcoin
 
 ![](https://badgen.net/bundlephobia/min/satoshi-bitcoin)
-[![Build Status](https://travis-ci.org/dawsbot/satoshi-bitcoin.svg?branch=master)](https://travis-ci.org/dawsbot/satoshi-bitcoin)
+[![🧪 npm test](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/test.yml/badge.svg)](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/test.yml)
 [![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
 
 > npm module to convert between Satoshi and Bitcoin <b>with lightweight precision</b>.

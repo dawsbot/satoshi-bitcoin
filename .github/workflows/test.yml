@@ -1,0 +1,27 @@
+name: 🧪 npm test
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [4, 8, 12, 16, latest]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm install
+      - run: find ./node_modules/eslint -type f -name '*.js' -exec sed -i 's/\bconst\b/var/g; s/\blet\b/var/g' {} +
+      - name: 🧪 Test
+        run: npm test

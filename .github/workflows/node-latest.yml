@@ -1,0 +1,13 @@
+name: node latest
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  test:
+    uses: ./.github/workflows/test-reusable.yml
+    with:
+      node-version: "latest"

@@ -1,7 +1,7 @@
 # satoshi-bitcoin
 
-![](https://badgen.net/bundlephobia/min/satoshi-bitcoin)
-[![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](http://badge.fury.io/js/satoshi-bitcoin)
+[![bundle size](https://img.shields.io/bundlejs/size/satoshi-bitcoin)](https://bundlejs.com/?q=satoshi-bitcoin)
+[![npm version](https://badge.fury.io/js/satoshi-bitcoin.svg)](https://badge.fury.io/js/satoshi-bitcoin)
 
 [![node 8](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/node-8.yml/badge.svg)](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/node-8.yml)
 [![node 12](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/node-12.yml/badge.svg)](https://github.com/dawsbot/satoshi-bitcoin/actions/workflows/node-12.yml)

@@ -14,7 +14,7 @@
 
 ## The Problem
 
-![The problem](http://i.imgur.com/H1Ck3bF.png)
+![The problem](https://i.imgur.com/H1Ck3bF.png)
 
 <br>
 
@@ -50,7 +50,7 @@ sb.toBitcoin(100000000);
 
 ```html
 <!-- package injected as "sb" -->
-<script src="https://rawgit.com/dawsonbotsford/satoshi-bitcoin/master/index.bundle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/satoshi-bitcoin/index.bundle.js"></script>
 <script>
   console.log("One Satoshi equals " + sb.toBitcoin(1) + " Bitcoin");
 </script>
@@ -94,7 +94,7 @@ TypeScript definitions are included — both functions accept a `number` or `str
   - Satoshi is to Bitcoin as pennies are to the dollar. Except that there are 100,000,000 Satoshi in one Bitcoin.
 
 - Why do I need a module when I can just divide or multiply by 100,000,000?
-  - [See here](http://repl.it/zlF/4) - Floating point errors are a problem. So `satoshi-bitcoin` uses a tiny bignum library (big.js) to ensure accurate conversions!
+  - [See here](https://repl.it/zlF/4) - Floating point errors are a problem. So `satoshi-bitcoin` uses a tiny bignum library (big.js) to ensure accurate conversions!
 
 <br>
 

@@ -9,9 +9,8 @@
   },
   "scripts": {
     "test": "eslint index.js && mocha",
-    "bundle": "browserify index.js -o index.bundle.js --standalone sb",
-    "wiki": "jsdox index.js --output wiki",
-    "precommit": "npm run wiki && npm run bundle"
+    "bundle": "esbuild index.js --bundle --format=iife --global-name=sb --outfile=index.bundle.js",
+    "prepublishOnly": "npm run bundle && npm test"
   },
   "repository": {
     "type": "git",
@@ -43,11 +42,9 @@
   },
   "homepage": "https://github.com/dawsbot/satoshi-bitcoin#readme",
   "devDependencies": {
-    "browserify": "^17.0.0",
     "chai": "^3.5.0",
+    "esbuild": "^0.28.1",
     "eslint": "2.13.1",
-    "husky": "^0.11.4",
-    "jsdox": "^0.4.9",
     "mocha": "^2.4.5"
   },
   "dependencies": {

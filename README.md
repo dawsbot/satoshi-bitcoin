@@ -83,7 +83,7 @@ try {
 `sb.toSatoshi(number || string)`
 `sb.toBitcoin(number || string)`
 
-[Read more on the Wiki](https://github.com/dawsonbotsford/satoshi-bitcoin/blob/master/wiki/index.md)
+TypeScript definitions are included — both functions accept a `number` or `string` and return a `number`.
 
 <br>
 

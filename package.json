@@ -8,7 +8,8 @@
     "node": ">0.10"
   },
   "scripts": {
-    "test": "eslint index.js && mocha",
+    "lint": "eslint index.js",
+    "test": "npm run lint && mocha",
     "bundle": "esbuild index.js --bundle --format=iife --global-name=sb --outfile=index.bundle.js",
     "prepublishOnly": "npm run bundle && npm test"
   },

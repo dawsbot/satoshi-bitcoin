@@ -12,7 +12,8 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [4, 8, 12, 16, latest]
+        # Node 4's npm can no longer reach the registry (TLS), so installs fail
+        node-version: [8, 12, 16, latest]
 
     steps:
       - uses: actions/checkout@v3

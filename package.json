@@ -1,6 +1,6 @@
 {
   "name": "satoshi-bitcoin",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Convert Satoshi <-> Bitcoin",
   "main": "index.js",
   "types": "index.d.ts",

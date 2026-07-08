@@ -7,7 +7,7 @@ on:
     branches: [master]
 
 jobs:
-  test:
+  node-8:
     uses: ./.github/workflows/test-reusable.yml
     with:
       node-version: "8"

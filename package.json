@@ -3,6 +3,7 @@
   "version": "1.0.5",
   "description": "Convert Satoshi <-> Bitcoin",
   "main": "index.js",
+  "types": "index.d.ts",
   "engines": {
     "node": ">0.10"
   },
@@ -54,6 +55,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "index.bundle.js"
   ]
 }

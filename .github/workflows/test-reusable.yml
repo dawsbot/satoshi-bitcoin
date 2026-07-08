@@ -1,25 +1,22 @@
-name: 🧪 npm test
+name: 🧪 test (reusable)
 
 on:
-  pull_request:
-    branches: [master]
-  push:
-    branches: [master]
+  workflow_call:
+    inputs:
+      node-version:
+        required: true
+        type: string
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [4, 8, 12, 16, latest]
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ inputs.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ inputs.node-version }}
           cache: "npm"
       - run: npm install
       - run: find ./node_modules/eslint -type f -name '*.js' -exec sed -i 's/\bconst\b/var/g; s/\blet\b/var/g' {} +

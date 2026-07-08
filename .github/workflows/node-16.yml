@@ -1,0 +1,13 @@
+name: node 16
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  node-16:
+    uses: ./.github/workflows/test-reusable.yml
+    with:
+      node-version: "16"

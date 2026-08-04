@@ -20,7 +20,7 @@ jobs:
           cache: "npm"
       # --ignore-scripts: esbuild's postinstall requires Node >= 18, but it's
       # only needed for bundling, not for running the test suite
-      - run: npm install --ignore-scripts
+      - run: npm ci --ignore-scripts
       - run: find ./node_modules/eslint -type f -name '*.js' -exec sed -i 's/\bconst\b/var/g; s/\blet\b/var/g' {} +
       - name: 🧪 Test
         run: npm test
